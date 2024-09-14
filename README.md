@@ -75,3 +75,53 @@ def attention(query, keys, values):
 ## Summary
 
 This repository implements the attention mechanism using basic Python code. Each step of the attention process is explained with simple code examples, focusing on clarity and understanding of the core concepts.
+
+---
+
+## How to Use the Example Script
+
+You can test the attention mechanism with the provided `example.py` script.
+
+### Steps to run the example:
+
+1. **Clone the repository**:
+   
+   ```bash
+   git clone https://github.com/PallaviHoge1/Attention_from_scratch
+   cd Attention_from_scratch
+   ```
+
+2. **Run the example**:
+
+   You can execute the `example.py` script from the command line:
+
+   ```bash
+   python example.py
+   ```
+
+3. **Expected Output**:
+
+   The script will run the attention mechanism on a sample query, keys, and values. You should see output similar to:
+
+   ```bash
+   Attention Output: [47.25, 52.25, 57.25]
+   ```
+
+   This output represents the weighted sum of the values, where each value is weighted by the attention scores computed from the query and keys.
+
+### Understanding the Example:
+
+In the `example.py` file:
+
+- We define a query vector representing the word we're focusing on.
+- We provide a set of keys (vectors representing the words in the input).
+- We also provide a set of values (encoded information about each word).
+- The `attention()` function calculates attention scores, applies softmax to get probabilities, and returns the weighted sum of the values based on these probabilities.
+
+By running the example, you can observe how the attention mechanism processes these vectors and computes the final output.
+
+---
+
+Feel free to modify `example.py` to test different queries, keys, and values to explore how the attention mechanism works under various conditions.
+
+---
